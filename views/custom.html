@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Readers' Haven Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="special-orders.html">Special Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Readers' Haven</h1>
+            <p>Discover your next favorite book!</p>
+            <button onclick="window.location.href='gallery.html'">Shop Now</button>
+        </section>
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="book-grid">
+                <!-- Book cards added dynamically via JS -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Readers' Haven | 123 Book St, City | (123) 456-7890 | info@readershaven.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

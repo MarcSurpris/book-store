@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="book1.jpg" alt="Readers' Haven Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="special-orders.html">Special Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About Readers' Haven</h1>
+            <p>Welcome to Readers’ Haven, your local bookstore dedicated to fostering a love for reading. Founded in 2010, our mission is to provide a cozy, welcoming space where book lovers can discover new stories, connect with fellow readers, and find their next favorite book.</p>
+            <p>Our curated collection includes everything from timeless classics to contemporary bestsellers. We pride ourselves on personalized service, helping customers find books that inspire and entertain. Visit us to experience the joy of reading in a community-driven environment!</p>
+            
+            <h2>Store Hours</h2>
+            <table aria-describedby="store-hours-desc">
+                <caption id="store-hours-desc">Readers' Haven Store Hours</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>10:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>10:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>10:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM - 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>11:00 AM - 5:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Contact Us</h2>
+            <p>Have a question or want to join our newsletter? Fill out the form below!</p>
+            <form id="subscribe-form" aria-labelledby="contact-form-heading">
+                <h3 id="contact-form-heading">Contact Form</h3>
+                <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                
+                <label for="email">Your Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <label>
+                    <input type="checkbox" name="subscribe" checked>
+                    Subscribe to our newsletter
+                </label>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-message" role="alert"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Readers' Haven | 123 Book St, City | (123) 456-7890 | info@readershaven.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

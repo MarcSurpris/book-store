@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #FFF8E7;
+    color: #3C2F2F;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFC1CC;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+
+nav {
+    background-color: #3C2F2F;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #FFF8E7;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #FFC1CC;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #FFF8E7;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+button {
+    background-color: #FFC1CC;
+    color: #FFF8E7;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3C2F2F;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3C2F2F;
+    color: #FFF8E7;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #FFC1CC;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #3C2F2F;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+/* Accessibility */
+nav a:focus {
+    outline: 2px solid #FFF8E7;
+}
+
+button:focus {
+    outline: 2px solid #3C2F2F;
+}

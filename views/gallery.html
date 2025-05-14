@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="book1.jpg" alt="Readers' Haven Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="special-orders.html">Special Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h1>Our Book Collection</h1>
+            <p>Browse our curated selection of books. Click "Add to Cart" to purchase!</p>
+            <div class="book-grid">
+                <div class="book-card">
+                    <h3>BRIE MINE 4EVER</h3>
+                    <img src="Book1.jpg" alt="Glory Riders, a book about bikers">
+                    <h3>Glory Riders</h3>
+                    <p>Price: $12.99</p>
+                    <button onclick="addToCart({title: 'Pride and Prejudice', author: 'Jane Austen', price: 12.99})">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="Book2.jpg" alt="Glory Riders, a book about bikers">
+                    <p>Price: $14.99</p>
+                    <button onclick="addToCart({title: '1984', author: 'George Orwell', price: 14.99})">Add to Cart</button>
+                </div>
+                <h3>Socerer's Shadowed Chronicles</h3>
+                <div class="book-card">
+                    <img src="Book3.jpg" alt="Cover of 'The Great Gatsby' by F. Scott Fitzgerald">
+                    
